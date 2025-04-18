@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Leopard_Leo Life Log</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+<body>
+  <h1>🦁 Leopard_Leo Life Log</h1>
+
+  <form id="daily-log-form">
+
+    <!-- Section 1: Date -->
+    <fieldset>
+      <legend>Date</legend>
+      <div class="form-row">
+        <label for="log-date">Log Date:</label>
+        <input type="date" id="log-date" name="logDate" required>
+      </div>
+    </fieldset>
+  
+    <!-- Section 2: Core Tasks -->
+    <fieldset>
+        <legend>Tasks Completed</legend>
+      
+        <div class="form-row">
+          <label><input type="checkbox" name="tasks" value="exercise"> Exercise</label>
+        </div>
+        <div class="form-row">
+          <label><input type="checkbox" name="tasks" value="protein"> Protein Shake</label>
+        </div>
+        <div class="form-row">
+          <label><input type="checkbox" name="tasks" value="reading"> Reading</label>
+        </div>
+        <div class="form-row">
+          <label><input type="checkbox" name="tasks" value="coding"> Coding</label>
+        </div>
+        <div class="form-row">
+          <label><input type="checkbox" name="tasks" value="mealprep"> Meal Prep</label>
+        </div>
+        <div class="form-row">
+          <label><input type="checkbox" name="tasks" value="nofone"> No Phone Before Noon</label>
+        </div>
+        <div class="form-row">
+          <label><input type="checkbox" name="tasks" value="dishes"> Dishes</label>
+        </div>
+        <div class="form-row">
+          <label><input type="checkbox" name="tasks" value="cleanroom"> Clean Room</label>
+        </div>
+        <div class="form-row">
+          <label><input type="checkbox" name="tasks" value="visa"> Visa Task</label>
+        </div>
+      
+      </fieldset>
+      
+      
+  
+    <!-- Section 3: Work Info -->
+    <fieldset>
+      <legend>Work Info</legend>
+      <div class="form-row">
+        <label><input type="radio" name="worktype" value="workday"> Work Day</label>
+        <label><input type="radio" name="worktype" value="dayoff"> Day Off</label>
+      </div>
+      <div class="form-row">
+        <label for="workhours">Work Hours:</label>
+        <input type="text" name="workhours" id="workhours" placeholder="e.g. 2 PM - 12 AM">
+      </div>
+    </fieldset>
+  
+    <!-- Section 4: Self Ratings -->
+    <fieldset>
+      <legend>Mood, Energy & Focus</legend>
+      <div class="form-row">
+        <label for="mood">Mood (1-10):</label>
+        <input type="number" id="mood" name="mood" min="1" max="10">
+      </div>
+      <div class="form-row">
+        <label for="energy">Energy (1-10):</label>
+        <input type="number" id="energy" name="energy" min="1" max="10">
+      </div>
+      <div class="form-row">
+        <label for="focus">Focus (1-10):</label>
+        <input type="number" id="focus" name="focus" min="1" max="10">
+      </div>
+    </fieldset>
+  
+    <!-- Section 5: Time -->
+    <fieldset>
+      <legend>Time Log</legend>
+      <div class="form-row">
+        <label for="wakeup">Wake-up Time:</label>
+        <input type="time" id="wakeup" name="wakeup">
+      </div>
+      <div class="form-row">
+        <label for="sleeptime">Sleep Time:</label>
+        <input type="time" id="sleeptime" name="sleeptime">
+      </div>
+    </fieldset>
+  
+    <!-- Section 6: Notes -->
+    <fieldset>
+      <legend>Notes</legend>
+      <div class="form-row">
+        <textarea name="notes" rows="4" cols="40" placeholder="Any thoughts, observations..."></textarea>
+      </div>
+    </fieldset>
+  
+    <button type="submit">Log Day</button>
+  </form>
+  
+</body>
+</html>
